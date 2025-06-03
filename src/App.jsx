@@ -9,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Form />} />
       </Routes>
+      <h1>vite + react</h1>
     </div>
   );
 }

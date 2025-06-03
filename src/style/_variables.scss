@@ -1,0 +1,44 @@
+//color 
+$white-1:#ffffff;
+
+$black-1:#000;
+$black-2:#1e1d1d;
+
+$red-1:#f00;
+
+$blue-1:#508AFB;
+$blue-2:#6167FF;
+
+$purple-1:#8A61FF;
+$purple-2:#8D29FF;
+$purple-3:#8F00FF;
+//Font Weights
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bolder: 900 !default;
+$font-weight-bold: bold !default;
+
+// Layout & Spacings
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1024px,
+  lg-custom: 1050px,
+  xl: 1280px,
+  xxl: 1300px,
+  xxxl: 1400px,
+  xxxl-custom: 1500px,
+);
+$container-max-widths: (
+  xl: 1470px,
+);
+$container-margins: (
+  xs: 15px,
+  lg: 30px,
+) !default;
+$grid-gutters: (
+  lg: 8px,
+) !default;

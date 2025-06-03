@@ -1,0 +1,65 @@
+@import "../variables";
+@import "../mixins";
+
+.registration-events {
+  display: flex;
+  justify-content: center;
+  max-width: 700px;
+  margin: 20px auto;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: $white-1;
+  .message-section {
+    .message-title {
+      @include media-breakpoint-up(lg) {
+        font-size: 28px;
+        margin-bottom: 8px;
+      }
+    }
+    .message-label {
+      @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+  .event-profile-form {
+    .form-group {
+      padding-top: 10px;
+      .form-control-label {
+        font-size: 14px;
+        line-height: 28px;
+        color: $black-2;
+        @include media-breakpoint-up(lg) {
+          font-size: 16px;
+        }
+      }
+      .form-control {
+        &:focus {
+          box-shadow: none;
+          border: 1px solid $black-1;
+          background-color: $white-1;
+        }
+      }
+      .invalid-error {
+        color: $red-1;
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+    .btn-container {
+      margin: 20px 0px;
+      .event-form-submit {
+        border: none;
+        padding: 10px 30px;
+        border-radius: 25px;
+        color: $white-1;
+        background: linear-gradient(to right, $purple-1, $purple-2, $purple-3);
+        font-size: 14px;
+        @include media-breakpoint-up(lg) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

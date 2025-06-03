@@ -1,0 +1,14 @@
+@import "./variables";
+@import "./mixins";
+
+body{
+  background: linear-gradient(to right,$blue-1 10%,$blue-2 46%,$purple-1 54%,$purple-2 81%,$purple-3 100%);
+}
+
+/* Override browser autofill styling to remove blue/yellow background and set text color */
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px $white-1 inset !important;
+  -webkit-box-shadow: 0 0 0px 1000px $white-1 inset !important;
+  -webkit-text-fill-color:$black-1 !important; /* optional: controls text color */
+}
+
